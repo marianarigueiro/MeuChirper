@@ -1,86 +1,218 @@
-Chirper
+# Chirper
 
-Projeto desenvolvido em Laravel 12 e Tailwind CSS, inspirado em uma rede social simples de microblog, onde usuários podem criar publicações rápidas chamadas Chirps.
+Projeto desenvolvido em **Laravel 12**, **Blade** e **Tailwind CSS**, baseado no projeto inicial do bootcamp Laravel Chirper, porém expandido com novas funcionalidades, melhorias visuais e personalizações próprias.
 
-Sobre o projeto
+O sistema simula uma rede social de microblog, onde usuários podem publicar mensagens curtas chamadas **Chirps**, visualizar perfis e interagir com uma interface moderna e organizada.
 
-O Chirper é uma aplicação web onde usuários podem:
+---
 
-- Criar conta
-- Fazer login e logout
-- Publicar chirps
-- Editar seus próprios posts
-- Excluir seus próprios posts
-- Visualizar perfil de usuários
-- Ver quantidade de publicações
-- Navegar por uma interface moderna e responsiva
+# Sobre o Projeto
 
-Tecnologias utilizadas
+Este projeto foi criado com foco em aprendizado prático de desenvolvimento web utilizando Laravel, aplicando conceitos essenciais como:
 
-- PHP 8.2
-- Laravel 12
-- Blade
-- Tailwind CSS
-- Vite
-- SQLite
+* Arquitetura MVC
+* CRUD completo
+* Rotas
+* Controllers
+* Models
+* Relacionamentos com Eloquent ORM
+* Autenticação de usuários
+* Blade Templates
+* Estilização com Tailwind CSS
+* Organização de projeto real
+* Versionamento com Git e GitHub
 
-Interface
+---
 
-Projeto com foco em visual limpo, moderno e organizado.
+# Funcionalidades
 
-Como rodar o projeto
+## Autenticação
 
-1. Clonar repositório
+* Cadastro de usuários
+* Login
+* Logout
+* Sessão autenticada
 
-git clone https://github.com/seu-usuario/chirper.git
-cd chirper
+## Publicações (Chirps)
 
-2. Instalar dependências
+* Criar novo post
+* Editar post próprio
+* Excluir post próprio
+* Listagem de posts em ordem cronológica
 
-composer install
-npm install
+## Perfil de Usuário
 
-3. Configurar ambiente
+* Página de perfil individual
+* Nome do usuário
+* E-mail
+* Data de entrada na plataforma
+* Quantidade total de posts
+* Avatar com inicial do nome
+* Lista de posts daquele usuário
 
-copy .env.example .env
-php artisan key:generate
+## Interface
 
-4. Rodar migrations
+* Layout moderno
+* Componentes organizados
+* Design responsivo
+* Navegação simplificada
+* Estilização personalizada com Tailwind CSS
 
-php artisan migrate
+---
 
-5. Iniciar projeto
+# Melhorias em relação ao projeto padrão do Bootcamp
 
-php artisan serve
-npm run dev
+O projeto original do bootcamp Laravel Chirper foi utilizado como base, porém recebeu diversas modificações e expansões.
 
-Estrutura principal
+## Alterações implementadas:
 
+### Interface totalmente personalizada
+
+* Novo visual
+* Cards modernos
+* Melhor espaçamento
+* Tipografia ajustada
+* Melhor experiência visual
+
+### Sistema de Perfil
+
+O projeto padrão não possuía perfil completo de usuário.
+
+Foi criado:
+
+* Página `/profile/{id}`
+* Estatísticas do usuário
+* Exibição de informações pessoais
+* Histórico de posts
+
+### Autenticação personalizada
+
+Em vez de utilizar Breeze/Jetstream padrão, parte do sistema foi adaptada manualmente para fins de aprendizado.
+
+### Organização própria de rotas
+
+Rotas reorganizadas para melhor estrutura.
+
+### Expansão do CRUD
+
+Controle de permissões para:
+
+* Apenas dono editar post
+* Apenas dono excluir post
+
+---
+
+# Tecnologias Utilizadas
+
+```txt
+PHP 8.2
+Laravel 12
+Blade
+Tailwind CSS
+Vite
+SQLite
+Git
+GitHub
+```
+
+---
+
+# Estrutura do Projeto
+
+```txt
 app/
-resources/views/
-routes/web.php
+ ├── Http/Controllers
+ ├── Models
+
+resources/
+ └── views/
+      ├── layouts
+      ├── auth
+      ├── chirps
+
+routes/
+ └── web.php
+
 database/
 public/
+```
 
-Aprendizados no projeto
+---
 
-Durante o desenvolvimento foram praticados conceitos como:
+# Como Executar o Projeto
 
-- MVC
-- Rotas
-- Controllers
-- Models
-- Relacionamentos Eloquent
-- CRUD completo
-- Autenticação
-- Blade Templates
-- Tailwind CSS
-- Git e GitHub
+## 1. Clonar repositório
 
-Desenvolvido por
+```bash
+git clone https://github.com/seu-usuario/chirper.git
+cd chirper
+```
 
-Mariana Rigueiro
+## 2. Instalar dependências
 
-Status
+```bash
+composer install
+npm install
+```
 
-Projeto funcional e em evolução.
+## 3. Configurar ambiente
+
+```bash
+copy .env.example .env
+php artisan key:generate
+```
+
+## 4. Rodar banco de dados
+
+```bash
+php artisan migrate
+```
+
+## 5. Iniciar aplicação
+
+```bash
+php artisan serve
+npm run dev
+```
+
+---
+
+# Aprendizados Aplicados
+
+Durante o desenvolvimento foram praticados:
+
+* CRUD real em Laravel
+* Relacionamento User x Chirps
+* Middleware de autenticação
+* Sessões
+* Segurança básica
+* Blade Components
+* Layout responsivo
+* Estruturação de projeto profissional
+* Git Flow básico
+
+---
+
+# Próximas Melhorias Futuras
+
+* Curtidas em posts
+* Comentários
+* Upload de foto de perfil
+* Sistema de seguidores
+* Busca de usuários
+* Tema escuro
+* Paginação
+
+---
+
+# Desenvolvido por
+
+**Mariana Rigueiro**
+
+Estudante de Desenvolvimento de Sistemas.
+
+---
+
+# Status
+
+Projeto funcional e em constante evolução.
