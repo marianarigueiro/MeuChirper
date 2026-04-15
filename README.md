@@ -21,6 +21,7 @@ Este projeto foi criado com foco em aprendizado prático de desenvolvimento web 
 * Estilização com Tailwind CSS
 * Organização de projeto real
 * Versionamento com Git e GitHub
+* Deploy em ambiente real
 
 ---
 
@@ -55,7 +56,6 @@ Este projeto foi criado com foco em aprendizado prático de desenvolvimento web 
 * Layout moderno
 * Componentes organizados
 * Design responsivo
-* Navegação simplificada
 * Estilização personalizada com Tailwind CSS
 
 ---
@@ -64,7 +64,7 @@ Este projeto foi criado com foco em aprendizado prático de desenvolvimento web 
 
 O projeto original do bootcamp Laravel Chirper foi utilizado como base, porém recebeu diversas modificações e expansões.
 
-## Alterações implementadas:
+## Alterações implementadas
 
 ### Interface totalmente personalizada
 
@@ -87,7 +87,7 @@ Foi criado:
 
 ### Autenticação personalizada
 
-Em vez de utilizar Breeze/Jetstream padrão, parte do sistema foi adaptada manualmente para fins de aprendizado.
+Parte do sistema foi adaptada manualmente para reforçar o aprendizado sobre autenticação e sessões.
 
 ### Organização própria de rotas
 
@@ -99,6 +99,10 @@ Controle de permissões para:
 
 * Apenas dono editar post
 * Apenas dono excluir post
+
+### Deploy em produção
+
+Aplicação publicada utilizando **Laravel Cloud**, permitindo acesso online ao projeto em ambiente real.
 
 ---
 
@@ -113,6 +117,7 @@ Vite
 SQLite
 Git
 GitHub
+Laravel Cloud
 ```
 
 ---
@@ -139,7 +144,7 @@ public/
 
 ---
 
-# Como Executar o Projeto
+# Como Executar o Projeto Localmente
 
 ## 1. Clonar repositório
 
@@ -177,6 +182,12 @@ npm run dev
 
 ---
 
+# Deploy
+
+O projeto também foi publicado em produção utilizando **Laravel Cloud**, demonstrando conhecimento em hospedagem e entrega de aplicações Laravel.
+
+---
+
 # Aprendizados Aplicados
 
 Durante o desenvolvimento foram praticados:
@@ -186,10 +197,11 @@ Durante o desenvolvimento foram praticados:
 * Middleware de autenticação
 * Sessões
 * Segurança básica
-* Blade Components
+* Blade Templates
 * Layout responsivo
 * Estruturação de projeto profissional
-* Git Flow básico
+* Git e GitHub
+* Deploy em nuvem
 
 ---
 
@@ -215,4 +227,4 @@ Estudante de Desenvolvimento de Sistemas.
 
 # Status
 
-Projeto funcional e em constante evolução.
+Projeto funcional, publicado online e em constante evolução.
